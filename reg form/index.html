@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="form">
+                <div class="head">
+                    <h1 class="txt-cen">Responsive Registration 
+                        <br>
+                        Form</h1>
+                </div>
+                <form action="/action_page.php" method="post" id="myform">
+                    
+                    <!-- Email -->
+                    <div class="detail row">
+                        <div class="det-i">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="det-ema">
+                            <input type="email" name="email" id="emailInput" placeholder="Email" >
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="detail row">
+                        <div class="det-i">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="det-ema">
+                            <input type="password" name="password" id="passwordInput" placeholder="Password">
+                            <div class="error-message" id="passwordError"></div>
+                        </div>
+                    </div>
+
+                    <!-- Re-password -->
+                    <div class="detail row ">
+                        <div class="det-i">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="det-ema">
+                            <input type="password" name="re-password" id="rePasswordInput" placeholder="Re-type password">
+                            <div class="error-message" id="rePasswordError"></div>
+                        </div>
+                    </div>     
+
+                    <!-- First and Last Name -->
+                    <div class="detail row names">
+                        <div class="detail-fnam row">
+                            <div class="det-i">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="det-name">
+                                <input type="text" name="fname" id="fnameInput" placeholder="First Name">
+                                <div class="error-message" id="fnameError"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-lnam row">
+                            <div class="det-i">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="det-name">
+                                <input type="text" name="lname" id="lnameInput" placeholder="Last Name">
+                                <div class="error-message" id="lnameError"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="detail">
+                        <div class="det-pad">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="error-message" id="genderError"></div>
+                    </div>
+
+                    <!-- Country Select -->
+                   
+<div class="detail txt-cen">
+    <select name="country" id="countrySelect">
+        <option value="select">Select a Country</option>
+        <option value="India">India</option>
+        <option value="France">France</option>
+        <option value="Argentina">Argentina</option>
+        <option value="NewZealand">New Zealand</option>
+        <option value="USA">USA</option>
+    </select>
+    <div class="error-message" id="countryError"></div>
+</div>
+
+<!-- Terms-->
+<div class="detail det-pad">
+    <div class="det-term">
+        <input type="checkbox" id="agree" name="term">
+        <label for="agree">I agree with terms and conditions</label>
+    </div>
+    <div class="error-message" id="termsError"></div>
+</div>
+
+<!-- Newsletter -->
+<div class="detail det-pad">
+    <div class="det-term">
+        <input type="checkbox" id="newsletter" name="nl">
+        <label for="newsletter">I want to receive the newsletter</label>
+    </div>
+    <div class="error-message" id="newsletterError"></div>
+</div>
+                    
+
+                    <!-- Submit Button -->
+                    <div class="button txt-cen">
+                        <button type="submit" class="btn">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+ 
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+    
+
+
+
+
+
+
+<script>
+   
+</script>
+   
+ 
+</body>
+</html>
+
+
+
